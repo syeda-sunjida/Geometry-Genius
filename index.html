@@ -33,19 +33,21 @@
                             style="width: 240px; height: 190px; margin: auto; padding: 20px;">
                         <div class="card-body" style="text-align: center;">
                             <h5 class="card-title">Triangle</h5>
-                            <p class="card-text">Area (A)= 0.5*b*h*</p>
+                            <p class="card-text">Area (A)= 0.5*b*h</p>
 
                         </div>
                         <div style="display:flex; margin-left: 50px;" class="container-fluid">
 
-                            <input type="number"  id="triangle-height" placeholder="b"  style="width: 50px; ">
-                            <label >cm</label>
+                            <input type="number" id="triangle-height" placeholder="b" style="width: 50px; ">
+                            <label>cm</label>
                             <input type="number" id="triangle-base" placeholder="h" style="width: 50px;">
-                            <label >cm</label>
-                            
-                            
+                            <label>cm</label>
                         </div>
-                        <input type="submit" value="Calculate" style="margin: 30px;" class="btn btn-primary">
+                        <button style="margin: 30px;" class="btn btn-primary"
+                            onclick="triangleArea()">Calculate</button>
+                        <p>
+                            Area of Triangle: <span id="calculate-triangle"></span>
+                        </p>
                     </div>
                 </div>
                 <div class="col">
@@ -53,9 +55,21 @@
                         <img src="images/rectangle.png" class="card-img-top" alt="..."
                             style="width: 240px; height: 190px; margin: auto; padding: 20px;">
                         <div class="card-body" style="text-align: center;">
-                            <h5 class="card-title">Triangle</h5>
-                            <p class="card-text">Area= .5*b*h*</p>
+                            <h5 class="card-title">Rectangle</h5>
+                            <p class="card-text">Area= l*w</p>
                         </div>
+                        <div style="display:flex; margin-left: 50px;" class="container-fluid">
+
+                            <input type="number" id="rectangle-length" placeholder="l" style="width: 50px; ">
+                            <label>cm</label>
+                            <input type="number" id="rectangle-width" placeholder="w" style="width: 50px;">
+                            <label>cm</label>
+                        </div>
+                        <button style="margin: 30px;" class="btn btn-primary"
+                            onclick="rectangleArea()">Calculate</button>
+                        <p>
+                            Area of Rectangle: <span id="calculate-rectangle"></span>
+                        </p>
                     </div>
                 </div>
                 <div class="col">
@@ -63,17 +77,32 @@
                         <img src="images/parallelogram.png" class="card-img-top" alt="..."
                             style="width: 240px; height: 190px; margin: auto; padding: 20px;">
                         <div class="card-body" style="text-align: center;">
-                            <h5 class="card-title">Triangle</h5>
-                            <p class="card-text">Area= .5*b*h*</p>
+                            <h5 class="card-title">Parallelogram</h5>
+                            <p class="card-text">Area= b*h</p>
                         </div>
+                        <div style="display:flex; margin-left: 50px;" class="container-fluid">
+
+                            <input type="number" id="triangle-height" placeholder="b" style="width: 50px; ">
+                            <label>cm</label>
+                            <input type="number" id="triangle-base" placeholder="h" style="width: 50px;">
+                            <label>cm</label>
+                        </div>
+                        <button style="margin: 30px;" class="btn btn-primary"
+                            onclick="triangleArea()">Calculate</button>
+                        <p>
+                            Area of Triangle: <span id="calculate"></span>
+                        </p>
                     </div>
+
                 </div>
                 <div class="col">
                     <div class="card h-100">
 
                         <div class="card-body">
                             <h5 class="card-title" style="text-align: center;">Area Calculation</h5>
-
+                            <p>
+                                Area of Triangle: <span id="calculate"></span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -82,9 +111,21 @@
                         <img src="images/rhombus.png" class="card-img-top" alt="..."
                             style="width: 240px; height: 190px; margin: auto; padding: 20px; ">
                         <div class="card-body" style="text-align: center;">
-                            <h5 class="card-title">Triangle</h5>
-                            <p class="card-text">Area= .5*b*h*</p>
+                            <h5 class="card-title">Rhombus</h5>
+                            <p class="card-text">Area= .5*d1*d2</p>
                         </div>
+                        <div style="display:flex; margin-left: 50px;" class="container-fluid">
+
+                            <input type="number" id="triangle-height" placeholder="d1" style="width: 50px; ">
+                            <label>cm</label>
+                            <input type="number" id="triangle-base" placeholder="d2" style="width: 50px;">
+                            <label>cm</label>
+                        </div>
+                        <button style="margin: 30px;" class="btn btn-primary"
+                            onclick="triangleArea()">Calculate</button>
+                        <p>
+                            Area of Triangle: <span id="calculate"></span>
+                        </p>
                     </div>
                 </div>
                 <div class="col">
@@ -92,9 +133,21 @@
                         <img src="images/pentagon.png" class="card-img-top" alt="..."
                             style="width: 240px; height: 190px; margin: auto; padding: 20px;">
                         <div class="card-body" style="text-align: center;">
-                            <h5 class="card-title">Triangle</h5>
-                            <p class="card-text">Area= .5*b*h*</p>
+                            <h5 class="card-title">Pentagon</h5>
+                            <p class="card-text">Area= .5*b*p</p>
                         </div>
+                        <div style="display:flex; margin-left: 50px;" class="container-fluid">
+
+                            <input type="number" id="triangle-height" placeholder="b" style="width: 50px; ">
+                            <label>cm</label>
+                            <input type="number" id="triangle-base" placeholder="p" style="width: 50px;">
+                            <label>cm</label>
+                        </div>
+                        <button style="margin: 30px;" class="btn btn-primary"
+                            onclick="triangleArea()">Calculate</button>
+                        <p>
+                            Area of Triangle: <span id="calculate"></span>
+                        </p>
                     </div>
                 </div>
                 <div class="col">
@@ -102,9 +155,21 @@
                         <img src="images/ellipse.png" class="card-img-top" alt="..."
                             style="width: 240px; height: 190px; margin: auto; padding: 20px;">
                         <div class="card-body" style="text-align: center;">
-                            <h5 class="card-title">Triangle</h5>
-                            <p class="card-text">Area= .5*b*h*</p>
+                            <h5 class="card-title">Ellipse</h5>
+                            <p class="card-text">Area= 3.1416*a*b</p>
                         </div>
+                        <div style="display:flex; margin-left: 50px;" class="container-fluid">
+
+                            <input type="number" id="triangle-height" placeholder="a" style="width: 50px; ">
+                            <label>cm</label>
+                            <input type="number" id="triangle-base" placeholder="b" style="width: 50px;">
+                            <label>cm</label>
+                        </div>
+                        <button style="margin: 30px;" class="btn btn-primary"
+                            onclick="triangleArea()">Calculate</button>
+                        <p>
+                            Area of Triangle: <span id="calculate"></span>
+                        </p>
                     </div>
                 </div>
 
@@ -115,7 +180,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-        <script src="triangle.js"></script>
+    <script src="triangle.js"></script>
+    <script src="rectangle.js"></script>
+    <script src="parallelogram.js"></script>
 </body>
 
 </html>
