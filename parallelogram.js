@@ -13,4 +13,5 @@ function paraArea() {
 
     document.getElementById(
         "calculate-para").innerText = area;
+        return area;
 }

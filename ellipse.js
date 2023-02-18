@@ -5,7 +5,9 @@ function ellipseArea() {
         .getElementById("b").value);
 
 
-
+if(a<=0 && b<=0){
+    console.log('enter a positive number')
+}
     
     var area = (a * b)*3.1416 ;
 
