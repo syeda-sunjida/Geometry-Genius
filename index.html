@@ -82,15 +82,15 @@
                         </div>
                         <div style="display:flex; margin-left: 50px;" class="container-fluid">
 
-                            <input type="number" id="triangle-height" placeholder="b" style="width: 50px; ">
+                            <input type="number" id="para-height" placeholder="h" style="width: 50px; ">
                             <label>cm</label>
-                            <input type="number" id="triangle-base" placeholder="h" style="width: 50px;">
+                            <input type="number" id="para-base" placeholder="b" style="width: 50px;">
                             <label>cm</label>
                         </div>
                         <button style="margin: 30px;" class="btn btn-primary"
-                            onclick="triangleArea()">Calculate</button>
+                            onclick="paraArea()">Calculate</button>
                         <p>
-                            Area of Triangle: <span id="calculate"></span>
+                            Area of Parallelogram: <span id="calculate-para"></span>
                         </p>
                     </div>
 
@@ -116,15 +116,15 @@
                         </div>
                         <div style="display:flex; margin-left: 50px;" class="container-fluid">
 
-                            <input type="number" id="triangle-height" placeholder="d1" style="width: 50px; ">
+                            <input type="number" id="rhombusd1" placeholder="d1" style="width: 50px; ">
                             <label>cm</label>
-                            <input type="number" id="triangle-base" placeholder="d2" style="width: 50px;">
+                            <input type="number" id="rhombusd2" placeholder="d2" style="width: 50px;">
                             <label>cm</label>
                         </div>
                         <button style="margin: 30px;" class="btn btn-primary"
-                            onclick="triangleArea()">Calculate</button>
+                            onclick="rhombusArea()">Calculate</button>
                         <p>
-                            Area of Triangle: <span id="calculate"></span>
+                            Area of Rhombus: <span id="calculate-rhombus"></span>
                         </p>
                     </div>
                 </div>
@@ -138,15 +138,15 @@
                         </div>
                         <div style="display:flex; margin-left: 50px;" class="container-fluid">
 
-                            <input type="number" id="triangle-height" placeholder="b" style="width: 50px; ">
+                            <input type="number" id="pen-p" placeholder="p" style="width: 50px; ">
                             <label>cm</label>
-                            <input type="number" id="triangle-base" placeholder="p" style="width: 50px;">
+                            <input type="number" id="pen-d" placeholder="d" style="width: 50px;">
                             <label>cm</label>
                         </div>
                         <button style="margin: 30px;" class="btn btn-primary"
-                            onclick="triangleArea()">Calculate</button>
+                            onclick="pentagonArea()">Calculate</button>
                         <p>
-                            Area of Triangle: <span id="calculate"></span>
+                            Area of pentagon: <span id="calculate-pentagon"></span>
                         </p>
                     </div>
                 </div>
@@ -183,6 +183,9 @@
     <script src="triangle.js"></script>
     <script src="rectangle.js"></script>
     <script src="parallelogram.js"></script>
+    <script src="randomColor.js"></script>
+    <script src="rhombus.js"></script>
+    <script src="pentagon.js"></script>
 </body>
 
 </html>
