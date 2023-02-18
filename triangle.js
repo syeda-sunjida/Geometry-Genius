@@ -1,13 +1,14 @@
 function triangleArea() {
-    var triangleHeight = parseInt(document.getElementById("triangle-height").value);
+    var triangleHeight = parseFloat(document.getElementById("triangle-height").value);
 
-    var triangleBase = parseInt(document
+    var triangleBase = parseFloat(document
         .getElementById("triangle-base").value);
 
 
 
     // console.log(typeof(triangleHeight));
-    var area = (triangleHeight * triangleBase) * .5;
+    var prevArea = (triangleHeight * triangleBase) * .5;
+    var area = prevArea.toFixed(2);
 
 
     if (area < 0) {

@@ -1,14 +1,15 @@
 function rectangleArea() {
-    var rectangleLength = parseInt(document
+    var rectangleLength = parseFloat(document
         .getElementById("rectangle-length").value);
 
-    var rectangleWidth = parseInt(document
+    var rectangleWidth = parseFloat(document
         .getElementById("rectangle-width").value);
 
 
 
     // console.log(typeof(triangleHeight));
-    var area = (rectangleLength * rectangleWidth);
+    var prevArea = (rectangleLength * rectangleWidth);
+    var area = prevArea.toFixed(2);
 
 
 

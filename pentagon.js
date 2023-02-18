@@ -1,13 +1,14 @@
 function pentagonArea() {
-    var penP = parseInt(document.getElementById("pen-p").value);
+    var penP = parseFloat(document.getElementById("pen-p").value);
 
-    var penD = parseInt(document
+    var penD = parseFloat(document
         .getElementById("pen-d").value);
 
 
 
     // console.log(typeof(triangleHeight));
-    var area = (penP * penD)*.5 ;
+    var prevArea = (penP * penD)*.5 ;
+    var area = prevArea.toFixed(2);
 
 
 

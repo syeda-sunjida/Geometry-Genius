@@ -1,13 +1,14 @@
 function paraArea() {
-    var paraHeight = parseInt(document.getElementById("para-height").value);
+    var paraHeight = parseFloat(document.getElementById("para-height").value);
 
-    var paraBase = parseInt(document
+    var paraBase = parseFloat(document
         .getElementById("para-base").value);
 
 
 
     // console.log(typeof(triangleHeight));
-    var area = (paraHeight * paraBase) ;
+    var prevArea = (paraHeight * paraBase) ;
+    var area = prevArea.toFixed(2);
 
 
 
