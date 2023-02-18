@@ -8,7 +8,7 @@ function triangleArea() {
 
     // console.log(typeof(triangleHeight));
     var prevArea = (triangleHeight * triangleBase) * .5;
-    var area = prevArea.toFixed(2);
+    var area = ' Area of Triangle: '+ prevArea.toFixed(2) + 'cm^2';
 
 
     if (area < 0) {

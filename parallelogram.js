@@ -8,7 +8,7 @@ function paraArea() {
 
     // console.log(typeof(triangleHeight));
     var prevArea = (paraHeight * paraBase) ;
-    var area = prevArea.toFixed(2);
+    var area = 'Area of Parallelogram: '+ prevArea.toFixed(2) + 'cm^2';
 
 
 

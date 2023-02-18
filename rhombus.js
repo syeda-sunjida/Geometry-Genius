@@ -8,7 +8,7 @@ function rhombusArea() {
 
     // console.log(typeof(triangleHeight));
     var prevArea = (rhombusd1 * rhombusd2)*.5 ;
-    var area = prevArea.toFixed(2);
+    var area = 'Area of Parallelogram: '+ prevArea.toFixed(2) + 'cm^2';
 
 
 

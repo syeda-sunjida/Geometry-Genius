@@ -9,7 +9,7 @@ function rectangleArea() {
 
     // console.log(typeof(triangleHeight));
     var prevArea = (rectangleLength * rectangleWidth);
-    var area = prevArea.toFixed(2);
+    var area = 'Area of Rectangle: '+ prevArea.toFixed(2) + 'cm^2';
 
 
 

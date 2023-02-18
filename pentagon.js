@@ -8,7 +8,7 @@ function pentagonArea() {
 
     // console.log(typeof(triangleHeight));
     var prevArea = (penP * penD)*.5 ;
-    var area = prevArea.toFixed(2);
+    var area = 'Area of Parallelogram: '+ prevArea.toFixed(2) + 'cm^2';
 
 
 

@@ -10,9 +10,9 @@ function ellipseArea() {
     }
 
     var prevArea = (a * b) * 3.1416;
-    var area = prevArea.toFixed(2);
+    var area = 'Area of ellipse: '+ prevArea.toFixed(2) + 'cm^2';
 
 
     document.getElementById(
-        "calculate-ellipse").innerText = area;
+        "calculate-ellipse").innerText =  area;
 }
