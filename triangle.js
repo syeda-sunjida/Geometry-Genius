@@ -11,10 +11,16 @@ function triangleArea() {
     var area = ' Area of Triangle: '+ prevArea.toFixed(2) + 'cm^2';
 
 
-    if (area < 0) {
+    if (triangleBase<=0 || triangleHeight<=0) {
         document.getElementById("calculate-triangle").innerText = 'no negative'
     }
+    if (triangleBase==" " || triangleHeight== " ") {
+        document.getElementById("calculate-triangle").innerText = 'no negative'
+    }
+   
+     else{
     document.getElementById(
         "calculate-triangle").innerText = area;
+    }
 
 }
