@@ -10,7 +10,10 @@ function triangleArea() {
     var area = (triangleHeight * triangleBase) * .5;
 
 
-
+    if (area < 0) {
+        document.getElementById("calculate-triangle").innerText = 'no negative'
+    }
     document.getElementById(
         "calculate-triangle").innerText = area;
+
 }

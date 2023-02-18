@@ -27,8 +27,8 @@
     <main>
         <section style="margin-top: 30px;">
             <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                    <div class="card h-100">
+                <div class="col" >
+                    <div class="card h-100" id="card1">
                         <img src="images/triangle.png" class="card-img-top" alt="..."
                             style="width: 240px; height: 190px; margin: auto; padding: 20px;">
                         <div class="card-body" style="text-align: center;">
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100" id="card2">
                         <img src="images/rectangle.png" class="card-img-top" alt="..."
                             style="width: 240px; height: 190px; margin: auto; padding: 20px;">
                         <div class="card-body" style="text-align: center;">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100" id="card3">
                         <img src="images/parallelogram.png" class="card-img-top" alt="..."
                             style="width: 240px; height: 190px; margin: auto; padding: 20px;">
                         <div class="card-body" style="text-align: center;">
@@ -107,7 +107,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100" id="card4">
                         <img src="images/rhombus.png" class="card-img-top" alt="..."
                             style="width: 240px; height: 190px; margin: auto; padding: 20px; ">
                         <div class="card-body" style="text-align: center;">
@@ -129,7 +129,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100" id="card5">
                         <img src="images/pentagon.png" class="card-img-top" alt="..."
                             style="width: 240px; height: 190px; margin: auto; padding: 20px;">
                         <div class="card-body" style="text-align: center;">
@@ -151,7 +151,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100" id="card6">
                         <img src="images/ellipse.png" class="card-img-top" alt="..."
                             style="width: 240px; height: 190px; margin: auto; padding: 20px;">
                         <div class="card-body" style="text-align: center;">
@@ -160,15 +160,15 @@
                         </div>
                         <div style="display:flex; margin-left: 50px;" class="container-fluid">
 
-                            <input type="number" id="triangle-height" placeholder="a" style="width: 50px; ">
+                            <input type="number" id="a" placeholder="a" style="width: 50px; ">
                             <label>cm</label>
-                            <input type="number" id="triangle-base" placeholder="b" style="width: 50px;">
+                            <input type="number" id="b" placeholder="b" style="width: 50px;">
                             <label>cm</label>
                         </div>
                         <button style="margin: 30px;" class="btn btn-primary"
-                            onclick="triangleArea()">Calculate</button>
+                            onclick="ellipseArea()">Calculate</button>
                         <p>
-                            Area of Triangle: <span id="calculate"></span>
+                            Area of ellipse: <span id="calculate-ellipse"></span>
                         </p>
                     </div>
                 </div>
@@ -186,6 +186,7 @@
     <script src="randomColor.js"></script>
     <script src="rhombus.js"></script>
     <script src="pentagon.js"></script>
+    <script src="ellipse.js"></script>
 </body>
 
 </html>
